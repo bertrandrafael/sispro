@@ -1,0 +1,112 @@
+//---------------------------------------------
+//
+//  Table of Contents
+//
+//    1. Basics
+//    2. Layout
+//    3. Components
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Basics
+//---------------------------------------------
+
+@import "variables";
+@import "bootstrap";
+@import "fonts";
+
+//---------------------------------------------
+// 2. Layout
+//---------------------------------------------
+
+html, body {
+    height: 100%;
+}
+
+body {
+    // font-size: .875rem;
+    background: #F5F5F5;
+    color: #212529;
+}
+
+.card {
+    .card-header {
+        background-color: #fff;
+        border-bottom: 0 solid transparent;
+        margin-bottom: 0;
+    }
+    &.tab-pane {
+        border-radius: 0 0 .25rem .25rem;
+        border-top: 0;
+    }    
+}
+
+.nav-tabs .nav-link {
+    font-size: 14px;
+}
+
+.tab-content {
+    border-top: 0;
+}
+  
+.info-box {
+    font-size: 28px;
+
+    small {
+        font-size: 16px;
+    }
+
+    .card-title {
+        margin-top: -4px;
+    }
+
+    .card {
+        text-decoration: none;
+        border: 4px solid transparent;
+        position: relative;
+        color: #666;
+
+        &.active {
+            color: $primary;
+        }
+
+        &.active:after {
+            content: '';
+            width: calc(100% + 8px);
+            height: 8px;
+            background: $primary;
+            position: absolute;
+            margin: -4px;
+        }
+        
+    }
+
+    .card:hover:not(.active) {
+        color: $primary;
+        border-color: $primary;
+        transition: all .2s linear;
+    }
+}
+
+.btn-collapse {
+    svg.fa-chevron-down {
+        transform: rotate(180deg);
+    } 
+
+    &.collapsed svg.fa-chevron-down {
+        transform: rotate(0deg);
+    }
+}
+
+
+//---------------------------------------------
+// 3.Components
+//---------------------------------------------
+
+@import "components/header";
+@import "components/form";
+@import "components/table";
+// @import "components/slider";
+@import "components/sidebar";
+@import "components/footer";

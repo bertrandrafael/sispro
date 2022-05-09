@@ -1,0 +1,28 @@
+table.dataTable {
+
+    thead {
+        background-color: #E9ECEF;
+
+        .sorting_asc.no-sort {
+            background-image: none !important;
+        }
+    }
+
+    thead th {
+        border-bottom: 1px solid #C4C4C4;
+    }
+
+    .select-all {
+        max-width: 10px;
+    }
+    
+    td,
+    th {
+        border-width: 1px;
+        border-color: #C4C4C4 !important;
+    } 
+
+    svg.fa-circle {
+        width: 14px;
+    }
+}

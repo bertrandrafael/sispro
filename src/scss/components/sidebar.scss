@@ -1,0 +1,139 @@
+
+.sidebar {
+    width: 80px !important;
+    min-height: 100vh;
+    transition: width .3s linear;
+
+    .logo {
+        display: none;
+
+        span {
+            left: 1rem;
+        }
+    }
+
+    .sidebar-heading span,
+    .nav-link span {
+        // display: none;
+        opacity: 0;
+        transition: opacity .2s linear;
+    }
+
+    &.navbar-dark .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+        color: rgba(255,255,255, 1);
+        transition: all .3s linear;
+
+        svg {
+            width: $icon-size;
+            height: $icon-size;
+        }
+
+        span.nav-name {
+            position: absolute;
+            left: $icon-size * 2;
+            white-space: nowrap;
+            width: calc(90% - $icon-size * 2 + 5px);
+         }
+
+        span.badge {
+            background-color: #292929;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 7px;
+            border-radius: 9px !important;
+        }
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: #fff;
+        background: $primary;
+        border-radius: 0.5rem;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    .sidebar-heading {
+        font-size: .75rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid $primary;
+        padding-bottom: 0.5rem;
+        min-height: 23px;
+        white-space: nowrap;
+    }
+
+    hr.bg-primary {
+        opacity: 1;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
+    .dropdown {
+
+        strong {
+            position: absolute;
+            top: 3px;
+            white-space: nowrap;
+            display: none;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+            display: none;
+        }
+
+        img {
+            margin-right: 0;
+        }
+
+        .dots {
+            display: block;
+        }
+    }  
+}
+
+// .sidebar:hover,
+#showMenu:checked + .sidebar {    
+    width: 260px !important;
+
+    .logo {
+        display: block;
+    }
+
+    .sidebar-heading span,
+    .nav-link span {
+        // display: inline;
+        opacity: 1;
+    }
+
+    .dropdown {
+        strong,
+        svg {
+            display: inline;
+        }
+
+        svg {
+            right: 0
+        }
+
+        img {
+            margin-right: 0.5rem;
+        }
+
+        .dots {
+            display: none;
+        }
+    }
+}
+
+
+.position-sticky {
+    width: 100%;
+    min-height: 100%;
+    // padding-bottom: 0.5rem;
+}

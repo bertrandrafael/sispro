@@ -1,0 +1,17 @@
+
+
+header {   
+    &.border-bottom {
+        border-bottom: 1px solid #C4C4C4 !important;
+    }
+}
+
+.breadcrumb {
+    a {
+        color: inherit;
+        text-decoration: none; 
+    }
+    a:hover {
+        color: $primary;
+    }    
+}

@@ -1,0 +1,17 @@
+label {
+    color: #212529;
+}
+
+input {
+    color: #495057;
+}
+
+::placeholder { 
+    opacity: .5 !important; 
+}
+:-ms-input-placeholder {
+    opacity: .5 !important; 
+}
+::-ms-input-placeholder {
+    opacity: .5 !important; 
+}

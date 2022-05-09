@@ -1,0 +1,18 @@
+footer {
+    color: $dark;
+    font-size: 14px;
+
+    .social {
+        list-style: none;
+
+        a {
+            color: $dark;
+            font-size: 1.2rem;
+        }
+
+        a:hover,
+        a:active {
+            color: $primary;
+        }
+    }
+}
